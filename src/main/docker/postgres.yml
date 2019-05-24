@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  liquibase-hibernate-reproduction-postgres:
+    image: postgres:11.3-alpine
+    environment:
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo_password
+    ports:
+      - 5432:5432
